@@ -9,21 +9,23 @@
 
 <body>
 
-	<h1>Variable</h1>
+	<h1>Revers Array</h1>
 
 	<script>
 		// declare array 
-		var x = [10, 12, 14, 16, 18];
-		var revers_data = [];
+		var arr = [10, 12, 14, 16, 18];
+
 
 		// reverse array  
-		for (let i = x.length - 1; i >= 0; i--) {
-			revers_data.push(x[i]);
+		for (var i = 0; i <= Math.floor((arr.length - 1) / 2); i++) {
+			let el = arr[i];
+			arr[i] = arr[arr.length - 1 - i];
+			arr[arr.length - 1 - i] = el;
 		}
-		
 
-		//console.log(revers_data)
-		alert(revers_data)
+
+		//console.log(arr)
+		alert(arr)
 
 
 	</script>
