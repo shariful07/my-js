@@ -1,0 +1,37 @@
+[
+{
+      "name": "Charlie Brohman",
+      "age": 28,
+      "city": "Chicago",
+      "current_position": "Account Officer",
+      "relevancy_weight" : 100
+    },
+{
+        "name": "Alexander",
+        "age": 28,
+        "city": "Chicago",
+        "current_position": "Finance Officer",
+        "relevancy_weight" : 100
+    },
+{
+      "name": "Ethan",
+      "age": 29,
+      "city": "Chicago",
+      "current_position": "Senior Account Officer",
+      "relevancy_weight" : 60
+    },
+{
+        "name": "Daniel",
+        "age": 28,
+        "city": "Chicago",
+        "current_position": "Junior Account Officer",
+        "relevancy_weight" : 60
+    },
+{
+      "name": "Michael",
+      "age": 28,
+      "city": "Chicago",
+      "current_position": "Accountant",
+      "relevancy_weight" : 60
+    }
+]

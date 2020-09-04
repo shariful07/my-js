@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+    
+        <title>JSON Data ::</title>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="data.json"></script>
+
+    
+  	</head>
+
+  	<body>
+
+    	<div class="wrap">
+            <div class="aplicantList table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>city</th>
+                            <th>Current Position</th>
+                            <th>weight</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "tableBody">
+                    </tbody>
+                </table>
+            </div>  
+        </div>
+        <script type="text/javascript">
+
+            
+            $.getJSON("data.json", function(my_json) {
+                var x = '';
+                for(var i in my_json) {
+                    var showData = my_json[i];
+                    x += '<tr>';
+                    for ( var j in showData){
+                    
+                        x +=  '<td>' + showData[j] + '</td>';  
+                    }
+                    x += ' </tr>';
+                
+                }
+                
+                document.getElementById("tableBody").innerHTML = x;
+
+
+            });
+
+            
+            
+    </script>
+	</body>
+</html>
