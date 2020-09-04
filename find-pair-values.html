@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+	<pre>
+		Task:
+		Input: array = [1, 2, 1, 3, 4, 2, 3, 4 ...............] 
+		output is: 4
+	</pre>
+
+	<script>
+		var arr = [1, 2, 1, 3, 4, 2, 3, 4, 5];
+		var arr2 = arr.slice(0);
+		let count = 0;
+
+		for (let i = 0; i < arr.length; i++) {
+			var pair = 0;
+			for (let j = 0; j < arr2.length; j++) {
+				if (arr[i] == arr2[j]) {
+					pair++;
+					delete arr2[j];
+
+				}
+			}
+
+			if (pair > 1) {
+				count++
+
+
+			}
+
+		}
+
+		console.log(count);
+
+
+	</script>
+
+</body>
+
+</html>
