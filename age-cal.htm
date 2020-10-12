@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+    <pre>
+		object class 
+	</pre>
+
+
+    <script>
+class PersonClass {
+            constructor(name, age, job) {
+                this.name = name;
+                this.age = age;
+                this.job = job;
+            }
+        }
+
+        class TeacherClass extends PersonClass {
+            constructor(name, age, job, subject) {
+                super(name, age, job);
+                this.subject = subject;
+            }
+        }
+
+        const ourSir = new TeacherClass('Shafiq Sir', 46, 'Assistant Teacher', 'Physics');
+
+
+        console.log(ourSir.name);
+        console.log(ourSir.age);
+        console.log(ourSir.job);
+        console.log(ourSir.subject);
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+	<pre>
+		how to find value from object by loop
+	</pre>
+
+
+	<script>
+		//Create basic Object 
+		let shariful = {
+			fullName: 'Shariful Islam',
+			age: 41,
+			address: 'Dhaka',
+			job: 'Freelancer'
+		};
+
+		// add new item after create object
+		shariful.postcode = 1216;
+
+		// add function after create object
+		shariful.myMsg = function () {
+			console.log("Added Function")
+		}
+
+		// changes item value 
+		shariful.job = 'Remote';
+
+
+		// access bojects by for loop:
+
+		//Property name 
+		for (let item in shariful) {
+			console.log(item);
+		}
+		//Property value
+		for (item in shariful) {
+			console.log(shariful[item]);
+		}
+		//Property name with property value
+		for (item in shariful) {
+			console.log(item + ":" + shariful[item]);
+		}
+
+		//create Object (Array into Object)
+		let objArr = {
+			name: 'Sharf',
+			job: 'fronend',
+			projects: ['project1', 'project3', 'project3']
+		}
+		// access object array
+		objArr.projects[2]
+
+		//create Object (Array into Object)
+		let arrObj = [
+			'Sharful',
+			{ name: 'Islam', job: 'frontend' },
+			'Bangladesh'
+		]
+		// access array
+		arrObj[2]
+		// access object 
+		arrObj[1].name
+
+
+
+	</script>
+
+
+
+</body>
+
+</html>
