@@ -16,7 +16,7 @@
 
 	<pre>
 		-Class is the original design
-		-One or more Objects of each Class can be created. Those objects contain all the properties of that class	</pre>
+		-One or more Objects of each Class can be created. Those objects contain all the properties of that class.	</pre>
 
 
 	<script>
@@ -62,11 +62,12 @@
 			console.log(` ${this.name}'s Date of Birth is ${2020 - this.age}`)
 		}
 		// create new object 
-		let sharif = new Person("Shariful Islam", 41, 'myjob');
+		let sharif = new Person("Shariful Islam", 41, 'remote');
 
 		//access data and method from object 
-		console.log(sharif.nameA);
-		console.log(sharif.dob);
+		console.log(sharif.name);
+		console.log(sharif.age);
+		console.log(sharif.job);
 		console.log(sharif.dateOfBirth());
 
 	</script>
