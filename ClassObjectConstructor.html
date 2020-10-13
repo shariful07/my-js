@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<style>
-		pre{
+		pre {
 			font-size: 20px;
 		}
 	</style>
@@ -15,16 +15,59 @@
 <body>
 
 	<pre>
-		Object oriented Java Script:
-			-Class
-			-Object
-			-Constructor
-	</pre>
+		-Class is the original design
+		-One or more Objects of each Class can be created. Those objects contain all the properties of that class	</pre>
 
 
 	<script>
-	
+		//Create Class
+		class child {
+			constructor(name, dob) {
+				this.name = name,
+					this.dob = dob
+			}
+			currentAge() {
+				console.log(`${this.name} is ${2018 - this.dob} years old!`);
+			}
+		}
+		// create new object 
+		let tahmid = new child("Radian Ahmed", 2012);
 
+		//access data and method from object 
+		console.log(tahmid.name);
+		console.log(tahmid.dob);
+		console.log(tahmid.currentAge());
+
+
+		//class  statement (Rules for writing classes)
+		class Myclass1 {
+		}
+		//class expression (Rules for writing classes)
+		const Myclass2 = class {
+
+		}
+
+
+		//Create Class
+		class Person {
+			constructor(name, age, job) {
+				this.name = name;
+				this.age = age;
+				this.job = job
+
+			}
+		}
+		//add method into existing class
+		Person.prototype.dateOfBirth = function () {
+			console.log(` ${this.name}'s Date of Birth is ${2020 - this.age}`)
+		}
+		// create new object 
+		let sharif = new Person("Shariful Islam", 41, 'myjob');
+
+		//access data and method from object 
+		console.log(sharif.nameA);
+		console.log(sharif.dob);
+		console.log(sharif.dateOfBirth());
 
 	</script>
 
