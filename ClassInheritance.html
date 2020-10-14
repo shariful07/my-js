@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        pre {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <pre>
+		-Class and Inheritance
+
+	<script>
+        //Create parent Class
+        class Guardian {
+            constructor(name, age, job) {
+                this.name = name;
+                this.age = age;
+                this.job = job;
+            }
+            dateOfBirth() {
+                console.log(`${this.name}'s date of birth is ${2020 - this.age} !`);
+            }
+            static Msg(){
+                console.log(`This message only for Class "Guardian" not object`)
+            }
+        }
+
+        // create child class and will inherit everything from Guardian class
+        class Child extends Guardian {
+            constructor(name, age, job, student) {
+                super(name, age, job);
+                this.student = student;
+
+            }
+        }
+
+        //create new object
+        const tahmid = new Child('Radian Ahmad Tahmid', 8, 'student', 'class two')
+
+        //access data and method from object 
+        console.log(tahmid.name);
+        console.log(tahmid.age);
+        console.log(tahmid.job);
+        console.log(tahmid.student);
+        console.log(tahmid.dateOfBirth());
+        console.log(Guardian.Msg());
+
+    </script>
+
+
+
+</body>
+
+</html>
