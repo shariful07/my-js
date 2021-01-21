@@ -1,0 +1,23 @@
+numbers = [ 1, 2, 3, 4, 5 ]
+const asd = numbers.filter((num) => num >2 );
+console.log(asd);
+
+const asd2 = numbers.find((num) => num >2 );
+console.log(asd2);
+
+const asd3 = numbers.findIndex((num) => num >2 );
+console.log(asd3);
+
+const asd4 = numbers.slice(2, 5 );
+console.log(asd4);
+
+const asd5 = numbers.concat(6, 7, 8);
+console.log(asd5);
+
+
+
+const asd6 = numbers.splice(0, 3);
+console.log(asd6);
+
+
+console.log(numbers);

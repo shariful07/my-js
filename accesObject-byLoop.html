@@ -12,7 +12,11 @@
 	<pre>
 		how to find value from object by loop
 	</pre>
-
+	<ul>
+		<li>Name:</li>
+		<li>Age:</li>
+		<li>Date of Birth is:</li>
+	</ul>
 
 	<script>
 		var objRahim = {
@@ -31,8 +35,23 @@
 		}
 		//Property name with property value
 		for (var x in objRahim) {
-			console.log( x + ":" + objRahim[x]);
+			console.log(x + ":" + objRahim[x]);
 		}
+
+		// create object 
+		function createPerson1(name, age) {
+			return {
+				name,
+				age,
+				dateOfBirth: () => {
+					console.log(name + ' is born in ' + (2018 - age));
+				}
+			}
+		}
+
+		let newperson = createPerson1('BossSajjad', 27);
+
+		console.log(newperson.dateOfBirth())
 
 	</script>
 
